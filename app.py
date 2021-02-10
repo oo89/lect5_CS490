@@ -19,6 +19,7 @@ def hello_world():
         headlines=article_data['headlines'],
         snippets=article_data['snippets'],
         dates = article_data['dates'],
+        urls = article_data['urls'],
     )
 
 app.run(

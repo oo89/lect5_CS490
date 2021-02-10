@@ -27,14 +27,19 @@ def get_article_data(keyword):
     
     def get_date(article):
         return article['pub_date']
-    
+
+    def get_url(article):
+        return article['web_url']
+        
     headlines = map(get_headline, articles)
     snippets = map(get_snippet, articles)
     dates = map(get_date, articles)
+    urls = map(get_url, articles)
 
     return {
         'headlines': list(headlines),
         'snippets': list(snippets),
         'dates': list(dates),
+        'urls': list(urls),
     }
 #my branch is master 
