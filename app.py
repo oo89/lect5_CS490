@@ -18,6 +18,7 @@ def hello_world():
         topic=keyword_query,
         headlines=article_data['headlines'],
         snippets=article_data['snippets'],
+        urls = article_data['urls'],
     )
 
 app.run(
